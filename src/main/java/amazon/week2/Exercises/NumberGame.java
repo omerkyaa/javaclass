@@ -1,8 +1,7 @@
-package amazon.week2;
+package amazon.week2.Exercises;
 
 import java.util.Random;
 import java.util.Scanner;
-import java.util.Timer;
 
 public class NumberGame {
 

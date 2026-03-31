@@ -27,11 +27,15 @@ public class ShoppingListDynamic {
         myShoppingList.myList.removeLast();
         //or we can write remove(index number)
 
+        myShoppingList.myList.forEach(System.out::println);
+
+        /*
         for (int i = 0; i < myShoppingList.myList.size(); i++){
 
             ShoppingItem shoppingItem = myShoppingList.myList.get(i);
-            System.out.println(shoppingItem.getName() + " " + shoppingItem.getQuantity() + " times");
+            System.out.println(shoppingItem);
         }
+        */
 
 
 

@@ -34,4 +34,10 @@ public class ShoppingItem {
         }
 
     }
+
+    @Override
+    public String toString() {
+        return "ShoppingItem with name='" + name + " and quantity=" + quantity;
+    }
+
 }
