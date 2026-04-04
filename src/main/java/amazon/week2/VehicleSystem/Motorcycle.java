@@ -11,24 +11,24 @@ public class Motorcycle extends Vehicle {
 
     @Override
     public void move() {
-        if (isStarted) {
-            System.out.println("Motorcycle " + brand + " is riding fast at " + speed + " km/h.");
+        if (isStarted()) {
+            System.out.println(getBrand() + " motorcycle is moving at " + getSpeed() + " km/h.");
         } else {
-            System.out.println("Motorcycle " + brand + " cannot move because it is not started.");
+            System.out.println(getBrand() + " motorcycle is not started.");
         }
     }
 
     public void doWheelie() {
-        if (isStarted) {
-            System.out.println("Motorcycle " + brand + " is doing a wheelie!");
+        if (isStarted()) {
+            System.out.println(getBrand() + " is doing wheelie.");
         } else {
-            System.out.println("Motorcycle must be started first.");
+            System.out.println("Start the motorcycle first.");
         }
     }
 
     public void showMotorcycleInfo() {
-        System.out.println("Motorcycle brand: " + brand);
-        System.out.println("Speed: " + speed);
-        System.out.println("Helmet available: " + hasHelmet);
+        System.out.println("Motorcycle brand: " + getBrand());
+        System.out.println("Speed: " + getSpeed());
+        System.out.println("Has helmet: " + hasHelmet);
     }
 }

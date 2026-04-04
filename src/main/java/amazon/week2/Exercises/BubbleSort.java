@@ -51,11 +51,7 @@ public class BubbleSort {
         bubbleSort.fillNumbers();
         bubbleSort.printNumbers();
 
-        long before = System.currentTimeMillis();
-        bubbleSort.sortNumbers();
-        long after = System.currentTimeMillis();
-        System.out.println("Sorting took " + (after - before) + " ms.");
-        bubbleSort.printNumbers();
+
 
 
 

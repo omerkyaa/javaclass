@@ -11,34 +11,29 @@ public class Bicycle extends Vehicle {
 
     @Override
     public void start() {
-        if (isStarted) {
-            System.out.println("Bicycle " + brand + " is already ready to ride.");
-        } else {
-            isStarted = true;
-            System.out.println("Bicycle " + brand + " is ready to ride.");
-        }
+        super.start();
     }
 
     @Override
     public void move() {
-        if (isStarted) {
-            System.out.println("Bicycle " + brand + " is pedaling at " + speed + " km/h.");
+        if (isStarted()) {
+            System.out.println(getBrand() + " bicycle is moving at " + getSpeed() + " km/h.");
         } else {
-            System.out.println("Bicycle " + brand + " cannot move because it is not ready.");
+            System.out.println(getBrand() + " bicycle is not started.");
         }
     }
 
     public void ringBell() {
         if (hasBell) {
-            System.out.println("Bicycle bell: Ring ring!");
+            System.out.println("Ring ring");
         } else {
-            System.out.println("This bicycle has no bell.");
+            System.out.println("No bell");
         }
     }
 
     public void showBicycleInfo() {
-        System.out.println("Bicycle brand: " + brand);
-        System.out.println("Speed: " + speed);
+        System.out.println("Bicycle brand: " + getBrand());
+        System.out.println("Speed: " + getSpeed());
         System.out.println("Has bell: " + hasBell);
     }
 }
